@@ -1,0 +1,19 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "checkout-ext"
+client_id = "6d290852345b1df3f4cf2f7f013a124d"
+application_url = "https://example.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [ "https://example.com/api/auth" ]
+
+[webhooks]
+api_version = "2023-07"
+
+[pos]
+embedded = false
